@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSenior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeniorAthleteFragment">
+
+
+    <EditText
+        android:id="@+id/etSName"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSBirthDate"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/birth_date"
+        android:importantForAutofill="no"
+        android:inputType="datetime|date"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etSName"
+        app:layout_constraintTop_toBottomOf="@+id/etSName" />
+
+    <EditText
+        android:id="@+id/etSNeighborhood"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/neighborhood"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etSBirthDate"
+        app:layout_constraintTop_toBottomOf="@+id/etSBirthDate" />
+
+    <Button
+        android:id="@+id/btnSSave"
+        android:layout_width="276dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/saveBtn"
+        android:textColor="@color/material_dynamic_neutral_variant10"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSheartProblems" />
+
+    <TextView
+        android:id="@+id/tvSResult"
+        android:layout_width="279dp"
+        android:layout_height="281dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSSave" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/heart_problems_question"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etSNeighborhood"
+        app:layout_constraintTop_toBottomOf="@+id/etSNeighborhood" />
+
+    <RadioGroup
+        android:id="@+id/rgSheartProblems"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbSYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/rbSNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

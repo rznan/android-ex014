@@ -1,0 +1,27 @@
+<resources>
+    <!--Meta-->
+    <string name="app_name">Nadadores Implícitos</string>
+    <string name="author_data">Renan Santos Carvalho\n1110482313034</string>
+
+    <!--EditTexts-->
+    <string name="name">Nome</string>
+    <string name="birth_date">Nascimento</string>
+    <string name="neighborhood">Bairro</string>
+    <string name="years_of_practice">Anos de prática</string>
+    <string name="heart_problems_question">Problemas de coração?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="gym">Academia</string>
+    <string name="record_seconds">Recorde (seg)</string>
+
+    <!--Botões-->
+    <string name="saveBtn">Cadastrar</string>
+
+    <!--Menu bars-->
+    <string name="menuJunior"> Juvenis</string>
+    <string name="menuSenior"> Sêniores</string>
+    <string name="menuGeneral">Geral</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

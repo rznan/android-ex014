@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGeneral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralAthleteFragment">
+
+    <EditText
+        android:id="@+id/etGName"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGBirthDate"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/birth_date"
+        android:importantForAutofill="no"
+        android:inputType="datetime|date"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etGName"
+        app:layout_constraintTop_toBottomOf="@+id/etGName" />
+
+    <EditText
+        android:id="@+id/etGNeighborhood"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/neighborhood"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etGBirthDate"
+        app:layout_constraintTop_toBottomOf="@+id/etGBirthDate" />
+
+    <EditText
+        android:id="@+id/etGGym"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/gym"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etGNeighborhood"
+        app:layout_constraintTop_toBottomOf="@+id/etGNeighborhood" />
+
+    <EditText
+        android:id="@+id/etGRecord"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/record_seconds"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etGNeighborhood"
+        app:layout_constraintTop_toBottomOf="@+id/etGGym" />
+
+    <Button
+        android:id="@+id/btnGSave"
+        android:layout_width="276dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/saveBtn"
+        android:textColor="@color/material_dynamic_neutral_variant10"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGRecord" />
+
+    <TextView
+        android:id="@+id/tvGResult"
+        android:layout_width="279dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
